@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    a {
+      font-size: 1.125rem;
+      padding: 16px 0;
+      display: inline-block;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 0;
+        background-color: #111;
+        margin-top: 2px;
+        transition: 400ms;
+        position: absolute;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
