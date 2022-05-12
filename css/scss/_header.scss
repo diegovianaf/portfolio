@@ -1,9 +1,9 @@
 .header {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
   padding: 20px;
 
   .navbar {
@@ -12,20 +12,20 @@
     gap: 40px;
 
     a {
+      display: inline-block;
       font-size: 1.125rem;
       padding: 16px 0;
-      display: inline-block;
       position: relative;
 
       &::after {
         content: '';
+        background-color: #111;
         display: block;
         height: 1px;
-        width: 0;
-        background-color: #111;
         margin-top: 2px;
-        transition: 400ms;
         position: absolute;
+        transition: 400ms;
+        width: 0;
       }
 
       &:hover::after {
