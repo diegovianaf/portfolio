@@ -1,0 +1,19 @@
+.home {
+  max-width: 1200px;
+  padding: 140px 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  .home-intro {
+    h1 {
+      font-size: 4.5rem;
+      margin: 10px 0;
+      padding: 0 20px;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}

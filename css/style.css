@@ -71,4 +71,26 @@ img {
 .header .navbar a:hover::after {
   width: 100%;
 }
+
+.home {
+  max-width: 1200px;
+  padding: 140px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.home .home-intro h1 {
+  font-size: 4.5rem;
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+.home .home-intro p {
+  font-size: 1.5rem;
+}
 /*# sourceMappingURL=style.css.map */
