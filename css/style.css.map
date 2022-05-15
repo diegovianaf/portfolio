@@ -5,7 +5,7 @@
         "scss/style.scss",
         "scss/_globals.scss",
         "scss/_header.scss",
-        "scss/_main.scss"
+        "scss/_home.scss"
     ],
     "names": [],
     "file": "style.css"
