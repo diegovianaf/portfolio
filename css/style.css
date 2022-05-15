@@ -36,8 +36,8 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 20px;
+  max-width: 960px;
+  padding: 20px 0;
 }
 
 .header .navbar {
@@ -73,8 +73,8 @@ img {
 }
 
 .home {
-  max-width: 1200px;
-  padding: 140px 20px;
+  max-width: 960px;
+  padding: 120px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,5 +92,34 @@ img {
 
 .home .home-intro p {
   font-size: 1.5rem;
+}
+
+.about {
+  max-width: 960px;
+  padding: 120px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.about .about-bio {
+  padding: 0 20px;
+}
+
+.about .about-bio h2 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+
+.about .about-bio p {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
