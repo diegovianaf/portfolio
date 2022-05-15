@@ -1,24 +1,30 @@
 .about {
   max-width: 960px;
-  padding: 120px 20px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  gap: 40px;
+  padding: 60px 20px;
   margin: 0 auto;
 
-  .about-bio {
-    padding: 0 20px;
+  h2 {
+    font-size: 2.5rem;
+    padding-bottom: 40px;
+    text-align: center;
+  }
 
-    h2 {
-      font-size: 2.5rem;
-      padding-bottom: 10px;
-    }
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 40px;
 
-    p {
-      font-size: 1.125rem;
-      line-height: 1.4;
-      margin-bottom: 1rem;
+    .about-bio {
+      padding: 0 20px;
+
+      p {
+        font-size: 1.125rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+      }
     }
   }
 }
+
+
