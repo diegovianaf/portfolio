@@ -6,8 +6,11 @@
 }
 
 body {
-  color: #111;
-  font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -37,7 +40,7 @@ img {
           justify-content: space-between;
   margin: 0 auto;
   max-width: 960px;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .header .navbar {
@@ -74,7 +77,7 @@ img {
 
 .home {
   max-width: 960px;
-  padding: 120px 0;
+  padding: 120px 20px 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,7 +99,17 @@ img {
 
 .about {
   max-width: 960px;
-  padding: 120px 0;
+  padding: 60px 20px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.about .about-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
@@ -105,21 +118,59 @@ img {
       -ms-flex-align: center;
           align-items: center;
   gap: 40px;
-  margin: 0 auto;
 }
 
-.about .about-bio {
+.about .about-container .about-bio {
   padding: 0 20px;
 }
 
-.about .about-bio h2 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
-}
-
-.about .about-bio p {
+.about .about-container .about-bio p {
   font-size: 1.125rem;
   line-height: 1.4;
   margin-bottom: 1rem;
+}
+
+.skills {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 60px 20px;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.skills .skills-list {
+  padding-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.skills .skills-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px;
+  background-color: #f5f5f5;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.skills .skills-list img {
+  width: 50px;
 }
 /*# sourceMappingURL=style.css.map */
