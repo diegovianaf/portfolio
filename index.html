@@ -22,7 +22,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -56,16 +56,16 @@
     <section class="skills" id="skills">
       <h2>Skills and Tools</h2>
       <ul class="skills-list">
-        <li><img src="./assets/icons/html.svg" alt="">HTML5</li>
-        <li><img src="./assets/icons/css.svg" alt="">CSS3</li>
-        <li><img src="./assets/icons/javascript.svg" alt="">JavaScript</li>
-        <li><img src="./assets/icons/react.svg" alt="">React</li>
-        <li><img src="./assets/icons/sass.svg" alt="">Sass</li>
-        <li><img src="./assets/icons/git.svg" alt="">Git</li>
-        <li><img src="./assets/icons/github.svg" alt="">GitHub</li>
-        <li><img src="./assets/icons/vscode.svg" alt="">VS Code</li>
-        <li><img src="./assets/icons/npm.svg" alt="">npm</li>
-        <li><img src="./assets/icons/eslint.svg" alt="">ESLint</li>
+        <li><img src="./assets/icons/tech-icons/html.svg" alt="">HTML5</li>
+        <li><img src="./assets/icons/tech-icons/css.svg" alt="">CSS3</li>
+        <li><img src="./assets/icons/tech-icons/javascript.svg" alt="">JavaScript</li>
+        <li><img src="./assets/icons/tech-icons/react.svg" alt="">React</li>
+        <li><img src="./assets/icons/tech-icons/sass.svg" alt="">Sass</li>
+        <li><img src="./assets/icons/tech-icons/git.svg" alt="">Git</li>
+        <li><img src="./assets/icons/tech-icons/github.svg" alt="">GitHub</li>
+        <li><img src="./assets/icons/tech-icons/vscode.svg" alt="">VS Code</li>
+        <li><img src="./assets/icons/tech-icons/npm.svg" alt="">npm</li>
+        <li><img src="./assets/icons/tech-icons/eslint.svg" alt="">ESLint</li>
       </ul>
     </section>
     <section class="projects" id="projects">
@@ -128,6 +128,40 @@
           </div>
         </li>
       </ul>
+    </section>
+    <section  class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <div class="contact-data">
+          <h3>Get in Touch</h3>
+          <p>Hey, I'm thrilled that you are here!</p>
+          <p>If you want to connect with me for a call or just a brief chat, you can find me on LinkedIn.</p>
+          <div class="contact-location">
+            <p>Rio de Janeiro, Brazil</p>
+          </div>
+          <address class="contact-email">
+            <a href="mailto:diegoviana7@gmail.com">diegovianaf7@gmail.com</a>
+          </address>
+          <div class="contact-social">
+            <a href="https://www.linkedin.com/in/diegovianaf/" target="_blank">
+              <img src="./assets/icons/linkedin-in-brands.svg" width="32" height="32" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/diegovianaf" target="_blank">
+              <img src="./assets/icons/github-brands.svg" width="32" height="32" alt="GitHub">
+            </a>
+          </div>
+        </div>
+        <form target="_blank" action="https://formsubmit.co/diegovianaf7@gmail.com" method="POST" class="contact-form">
+          <input type="hidden" name="_subject" value="New Email!">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea rows="5" name="message" placeholder="Message" required></textarea>
+          <!-- Create a Thanks page, and the directory in the input below -->
+          <!-- <input type="hidden" name="_next" value=""> -->
+          <input type="hidden" name="_captcha" value="false">
+          <button type="submit" class="button">Send Message</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer>
