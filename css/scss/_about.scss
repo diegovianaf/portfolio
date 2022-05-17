@@ -7,10 +7,14 @@
     align-items: center;
     display: grid;
     gap: 40px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
 
     .about-bio {
       padding: 0 20px;
+    }
+
+    .about-img img {
+      border-radius: 4px;
     }
   }
 }
