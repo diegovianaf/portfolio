@@ -8,14 +8,21 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 600;
   padding-bottom: 40px;
   text-align: center;
+}
+
+h2>span {
+  color: $primary-color-4;
+  font-size: 4rem;
+  line-height: 1;
 }
 
 h3 {
@@ -24,8 +31,6 @@ h3 {
 
 p {
   font-size: 1.125rem;
-  line-height: 1.4;
-  margin-bottom: .5rem;
 }
 
 ul {
