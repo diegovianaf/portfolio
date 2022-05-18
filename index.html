@@ -14,32 +14,41 @@
 </head>
 
 <body>
-  <header class="header">
-    <a href="./"><img src="./assets/logo.svg" alt="Diego" width="76" height="28"></a>
-    <nav>
-      <ul class="navbar">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./"><img src="./assets/logo.svg" alt="Diego" width="76" height="28"></a>
+      <nav>
+        <ul class="header-navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
-    <section class="home" id="home">
-      <div class="home-img">
-        <img src="./assets/undraw_dev.svg" alt="">
-      </div>
-      <div class="home-intro">
-        <p>Hi there, I'm</p>
+
+  <main class="intro-bg">
+    <div class="intro container">
+      <div class="intro-title">
+        <p>Hello, I'm</p>
         <h1>Diego Viana</h1>
         <p>Frontend Developer</p>
       </div>
-    </section>
-    <section class="about" id="about">
+      <div class="intro-img">
+        <img src="./assets/undraw_dev.svg" alt="Illustration of a developer coding on his laptop.">
+      </div>
+    </div>
+  </main>
+
+  <div class="about-bg">
+    <article class=" container about" id="about">
       <h2>About Me</h2>
       <div class="about-container">
+        <div class="about-img">
+          <img src="./assets/profile-pic.jpg" alt="A photo of me, smiling, during a walk in the snow">
+        </div>
         <div class="about-bio">
           <p>
             Hey, thanks for coming here! My name is Diego Viana, I'm a frontend developer, who started learning web development in September 2021, and after two months of study, became passionate about frontend.
@@ -51,122 +60,123 @@
             In addition to my tech skills, I have a <strong>Bachelor's degree in Business Administration(BBA)</strong> and speak Portuguese (native), English, Spanish, and some German.
           </p>
         </div>
-        <div class="about-img">
-          <img src="./assets/profile-pic.jpg" alt="A photo of me, smiling, during a walk in the snow">
+      </div>
+    </article>
+  </div>
+
+  <section class="skills" id="skills">
+    <h2>Skills and Tools</h2>
+    <ul class="skills-list">
+      <li><img src="./assets/icons/tech-icons/html.svg" alt="">HTML5</li>
+      <li><img src="./assets/icons/tech-icons/css.svg" alt="">CSS3</li>
+      <li><img src="./assets/icons/tech-icons/javascript.svg" alt="">JavaScript</li>
+      <li><img src="./assets/icons/tech-icons/react.svg" alt="">React</li>
+      <li><img src="./assets/icons/tech-icons/sass.svg" alt="">Sass</li>
+      <li><img src="./assets/icons/tech-icons/git.svg" alt="">Git</li>
+      <li><img src="./assets/icons/tech-icons/github.svg" alt="">GitHub</li>
+      <li><img src="./assets/icons/tech-icons/vscode.svg" alt="">VS Code</li>
+      <li><img src="./assets/icons/tech-icons/npm.svg" alt="">npm</li>
+      <li><img src="./assets/icons/tech-icons/eslint.svg" alt="">ESLint</li>
+    </ul>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <ul class="projects-list">
+      <li class="projects-card">
+        <div class="img-box">
+          <img src="./assets/projects-img/bikcraft.jpeg" alt="Screenshot of the bikcraft project">
+        </div>
+        <div class="project-description">
+          <h3>Bikcraft</h3>
+          <p>Fully responsive website developed for a fake company that sells and insures bicycles.</p>
+          <a class="button" href="https://diegovianaf.github.io/orig-bikcraft/" target="_blank">View Live</a>
+          <a class="button" href="https://github.com/diegovianaf/orig-bikcraft" target="_blank">GitHub</a>
+          <p>
+            HTML | CSS | JavaScript
+          </p>
+        </div>
+      </li>
+      <li class="projects-card">
+        <div class="img-box">
+          <img src="./assets/projects-img/dogs.jpeg" alt="Screenshot of the Dogs project">
+        </div>
+        <div class="project-description">
+          <h3>Dogs</h3>
+          <p>Fully responsive social media application developed with React JS, using an API.</p>
+          <a class="button" href="https://orig-dogs.netlify.app/" target="_blank">View Live</a>
+          <a class="button" href="https://github.com/diegovianaf/orig-dogs" target="_blank">GitHub</a>
+          <p>
+            React | React Router | CSS Modules
+          </p>
+        </div>
+      </li>
+      <li class="projects-card">
+        <div class="img-box">
+          <img src="./assets/projects-img/todo-list.jpeg" alt="Screenshot of the To-do List project">
+        </div>
+        <div class="project-description">
+          <h3>To-do List</h3>
+          <p>A single page with a To-do List that you can add your tasks to by pressing 'Enter' and keeping them in the local storage.</p>
+          <a class="button" href="https://diegovianaf.github.io/ffsjs-to-do-list/" target="_blank">View Live</a>
+          <a class="button" href="https://github.com/diegovianaf/ffsjs-to-do-list" target="_blank">GitHub</a>
+          <p>
+            HTML | CSS | JavaScript
+          </p>
+        </div>
+      </li>
+      <li class="projects-card">
+        <div class="img-box">
+          <img src="./assets/projects-img/animals.jpeg" alt="Screenshot of the Fantastic Animals project">
+        </div>
+        <div class="project-description">
+          <h3>Fantastic Animals</h3>
+          <p>A responsive website designed to display fantastic animals, based on all the knowledge acquired in the full JavaScript course.</p>
+          <a class="button" href="https://diegovianaf.github.io/orig-fantastic-animals/" target="_blank">View Live</a>
+          <a class="button" href="https://github.com/diegovianaf/orig-fantastic-animals" target="_blank">GitHub</a>
+          <p>
+            HTML | CSS | JavaScript
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-data">
+        <h3>Get in Touch</h3>
+        <p>Hey, I'm thrilled that you are here!</p>
+        <p>If you want to connect with me for a call or just a brief chat, you can find me on LinkedIn.</p>
+        <div class="contact-location">
+          <p>Rio de Janeiro, Brazil</p>
+        </div>
+        <address class="contact-email">
+          <a href="mailto:diegoviana7@gmail.com">diegovianaf7@gmail.com</a>
+        </address>
+        <div class="contact-social">
+          <a href="https://www.linkedin.com/in/diegovianaf/" target="_blank">
+            <img src="./assets/icons/linkedin-in-brands.svg" width="32" height="32" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/diegovianaf" target="_blank">
+            <img src="./assets/icons/github-brands.svg" width="32" height="32" alt="GitHub">
+          </a>
         </div>
       </div>
-    </section>
-    <section class="skills" id="skills">
-      <h2>Skills and Tools</h2>
-      <ul class="skills-list">
-        <li><img src="./assets/icons/tech-icons/html.svg" alt="">HTML5</li>
-        <li><img src="./assets/icons/tech-icons/css.svg" alt="">CSS3</li>
-        <li><img src="./assets/icons/tech-icons/javascript.svg" alt="">JavaScript</li>
-        <li><img src="./assets/icons/tech-icons/react.svg" alt="">React</li>
-        <li><img src="./assets/icons/tech-icons/sass.svg" alt="">Sass</li>
-        <li><img src="./assets/icons/tech-icons/git.svg" alt="">Git</li>
-        <li><img src="./assets/icons/tech-icons/github.svg" alt="">GitHub</li>
-        <li><img src="./assets/icons/tech-icons/vscode.svg" alt="">VS Code</li>
-        <li><img src="./assets/icons/tech-icons/npm.svg" alt="">npm</li>
-        <li><img src="./assets/icons/tech-icons/eslint.svg" alt="">ESLint</li>
-      </ul>
-    </section>
-    <section class="projects" id="projects">
-      <h2>Projects</h2>
-      <ul class="projects-list">
-        <li class="projects-card">
-          <div class="img-box">
-            <img src="./assets/projects-img/bikcraft.jpeg" alt="Screenshot of the bikcraft project">
-          </div>
-          <div class="project-description">
-            <h3>Bikcraft</h3>
-            <p>Fully responsive website developed for a fake company that sells and insures bicycles.</p>
-            <a class="button" href="https://diegovianaf.github.io/orig-bikcraft/" target="_blank">View Live</a>
-            <a class="button" href="https://github.com/diegovianaf/orig-bikcraft" target="_blank">GitHub</a>
-            <p>
-              HTML | CSS | JavaScript
-            </p>
-          </div>
-        </li>
-        <li class="projects-card">
-          <div class="img-box">
-            <img src="./assets/projects-img/dogs.jpeg" alt="Screenshot of the Dogs project">
-          </div>
-          <div class="project-description">
-            <h3>Dogs</h3>
-            <p>Fully responsive social media application developed with React JS, using an API.</p>
-            <a class="button" href="https://orig-dogs.netlify.app/" target="_blank">View Live</a>
-            <a class="button" href="https://github.com/diegovianaf/orig-dogs" target="_blank">GitHub</a>
-            <p>
-              React | React Router | CSS Modules
-            </p>
-          </div>
-        </li>
-        <li class="projects-card">
-          <div class="img-box">
-            <img src="./assets/projects-img/todo-list.jpeg" alt="Screenshot of the To-do List project">
-          </div>
-          <div class="project-description">
-            <h3>To-do List</h3>
-            <p>A single page with a To-do List that you can add your tasks to by pressing 'Enter' and keeping them in the local storage.</p>
-            <a class="button" href="https://diegovianaf.github.io/ffsjs-to-do-list/" target="_blank">View Live</a>
-            <a class="button" href="https://github.com/diegovianaf/ffsjs-to-do-list" target="_blank">GitHub</a>
-            <p>
-              HTML | CSS | JavaScript
-            </p>
-          </div>
-        </li>
-        <li class="projects-card">
-          <div class="img-box">
-            <img src="./assets/projects-img/animals.jpeg" alt="Screenshot of the Fantastic Animals project">
-          </div>
-          <div class="project-description">
-            <h3>Fantastic Animals</h3>
-            <p>A responsive website designed to display fantastic animals, based on all the knowledge acquired in the full JavaScript course.</p>
-            <a class="button" href="https://diegovianaf.github.io/orig-fantastic-animals/" target="_blank">View Live</a>
-            <a class="button" href="https://github.com/diegovianaf/orig-fantastic-animals" target="_blank">GitHub</a>
-            <p>
-              HTML | CSS | JavaScript
-            </p>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section  class="contact" id="contact">
-      <h2>Contact Me</h2>
-      <div class="contact-container">
-        <div class="contact-data">
-          <h3>Get in Touch</h3>
-          <p>Hey, I'm thrilled that you are here!</p>
-          <p>If you want to connect with me for a call or just a brief chat, you can find me on LinkedIn.</p>
-          <div class="contact-location">
-            <p>Rio de Janeiro, Brazil</p>
-          </div>
-          <address class="contact-email">
-            <a href="mailto:diegoviana7@gmail.com">diegovianaf7@gmail.com</a>
-          </address>
-          <div class="contact-social">
-            <a href="https://www.linkedin.com/in/diegovianaf/" target="_blank">
-              <img src="./assets/icons/linkedin-in-brands.svg" width="32" height="32" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/diegovianaf" target="_blank">
-              <img src="./assets/icons/github-brands.svg" width="32" height="32" alt="GitHub">
-            </a>
-          </div>
-        </div>
-        <form target="_blank" action="https://formsubmit.co/diegovianaf7@gmail.com" method="POST" class="contact-form">
-          <input type="hidden" name="_subject" value="New Email!">
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <textarea rows="5" name="message" placeholder="Message" required></textarea>
-          <!-- Create a Thanks page, and the directory in the input below -->
-          <!-- <input type="hidden" name="_next" value=""> -->
-          <input type="hidden" name="_captcha" value="false">
-          <button type="submit" class="button">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
+      <form target="_blank" action="https://formsubmit.co/diegovianaf7@gmail.com" method="POST" class="contact-form">
+        <input type="hidden" name="_subject" value="New Email!">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea rows="5" name="message" placeholder="Message" required></textarea>
+        <!-- Create a Thanks page, and the directory in the input below -->
+        <!-- <input type="hidden" name="_next" value=""> -->
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit" class="button">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
   <footer class="footer">
     <p>Developed by Diego Viana.</p>
   </footer>
