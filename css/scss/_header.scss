@@ -1,19 +1,43 @@
 .header-bg {
-  background-color: #000;
+  background-color: $color-8;
 
   .header {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+
+    .logo {
+      color: $color-2;
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+
+      &:hover {
+        color: $color-1;
+
+        span {
+          color: $primary-color-3;
+        }
+      }
+
+      span {
+        color: $color-4;
+        font-size: 1.75rem;
+      }
+    }
 
     .header-navbar {
-      color: #fff;
+      color: $color-2;
       display: flex;
       flex-wrap: wrap;
       font-family: 'Poppins', sans-serif;
       gap: 40px;
+
+      &:hover {
+        color: $color-1;
+      }
 
       a {
         display: inline-block;
@@ -23,12 +47,13 @@
 
         &::after {
           content: '';
-          background-color: #fff;
+          background-color: $primary-color-3;
+          border-radius: 4px;
           display: block;
-          height: 1px;
+          height: 4px;
           margin-top: 2px;
           position: absolute;
-          transition: 400ms;
+          transition: 300ms;
           width: 0;
         }
 
