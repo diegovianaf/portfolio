@@ -5,10 +5,13 @@
 }
 
 body {
+  background-color: $color-5;
+  color: $color-2;
   font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3 {
+  color: $color-1;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -21,7 +24,7 @@ h2 {
 
 h1>span,
 h2>span {
-  color: $primary-color-4;
+  color: $primary-color-1;
   font-size: 1.125em;
   line-height: 1;
 }
