@@ -1,6 +1,5 @@
 .header-bg {
-  background-color: $color-8;
-  border-bottom: .5px solid $color-6;
+  border-bottom: 1px solid $color-4;
 
   .header {
     align-items: center;
@@ -10,51 +9,51 @@
     padding-top: 12px;
 
     .logo {
-      color: $color-2;
+      color: $color-1;
       font-family: 'Poppins', sans-serif;
       font-size: 2rem;
       font-weight: 600;
 
-      &:hover {
-        color: $color-1;
-
-        span {
-          color: $primary-color-3;
-        }
+      span {
+        color: $color-3;
+        font-size: 1.75rem;
       }
 
-      span {
-        color: $color-4;
-        font-size: 1.75rem;
+      &:hover {
+        color: $color-2;
+
+        span {
+          color: $primary-color-1;
+          transition: 400ms;
+        }
       }
     }
 
     .header-navbar {
-      color: $color-2;
       display: flex;
       flex-wrap: wrap;
       font-family: 'Poppins', sans-serif;
       gap: 40px;
 
-      &:hover {
-        color: $color-1;
-      }
-
       a {
+        color: $color-1;
         display: inline-block;
         font-size: 1.125rem;
         padding: 16px 0;
         position: relative;
 
+        &:hover {
+          color: $color-2;
+        }
+
         &::after {
-          content: '';
-          background-color: $primary-color-3;
+          background-color: $primary-color-1;
           border-radius: 4px;
+          content: '';
           display: block;
           height: 4px;
-          margin-top: 2px;
           position: absolute;
-          transition: 300ms;
+          transition: 400ms;
           width: 0;
         }
 
