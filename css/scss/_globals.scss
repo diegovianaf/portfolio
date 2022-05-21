@@ -15,26 +15,13 @@ h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 
-h2 {
-  font-size: 3rem;
-  font-weight: 600;
-  padding-bottom: 40px;
-  text-align: center;
-}
-
-h1>span,
-h2>span {
-  color: $primary-color-1;
-  font-size: 1.125em;
-  line-height: 1;
-}
-
 h3 {
   font-size: 1.5rem;
 }
 
 p {
   font-size: 1.125rem;
+  line-height: 1.4;
 }
 
 ul {
