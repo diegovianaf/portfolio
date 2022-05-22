@@ -11,7 +11,7 @@
 
       &:hover {
         color: $color-1;
-        transition:  400ms linear;
+        transition: 800ms linear;
       }
 
       p {
@@ -19,6 +19,7 @@
       }
 
       .skills-list {
+        margin-top: 32px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
   
@@ -57,18 +58,6 @@
 
         &:hover {
           border: 2px solid $primary-color-1;
-          transition: 400ms;
-        }
-      }
-
-      &:hover {
-        border-left: 1px solid transparent;
-        border-top: 1px solid transparent;
-        opacity: 1;
-
-        .img-border {
-          top: 12px;
-          left: 12px;
           transition: 400ms;
         }
       }
