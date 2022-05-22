@@ -35,12 +35,12 @@
         <h1>Diego Viana<span>.</span></h1>
         <p>Frontend Developer</p>
       </div>
-      <div class="home-social">
-        <a href="https://github.com/diegovianaf" target="_blank">
+      <div class="contact-social">
+        <a class="contact-link" href="https://github.com/diegovianaf" target="_blank">
           <img src="./assets/icons/github-color.svg" alt="" width="20">
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/diegovianaf/" target="_blank">
+        <a class="contact-link" href="https://www.linkedin.com/in/diegovianaf/" target="_blank">
           <img src="./assets/icons/linkedin-color.svg" alt="" width="18">
           LinkedIn
         </a>
@@ -89,27 +89,6 @@
 
       <li class="projects-card">
         <div class="img-box">
-          <img src="./assets/projects-img/bikcraft.jpeg" alt="Screenshot of the bikcraft project">
-        </div>
-        <div class="project-description">
-          <div class="card-title">
-            <h3>Bikcraft</h3>
-            <div class="card-icons">
-              <a href="https://github.com/diegovianaf/orig-bikcraft" target="_blank"><span class="github-icon"></span></a>
-              <a href="https://diegovianaf.github.io/orig-bikcraft/" target="_blank"><span class="link-icon"></span></a>
-            </div>
-          </div>
-          <div class="card-techs">
-            <span class="tech-bg html">HTML</span>
-            <span class="tech-bg css">CSS</span>
-            <span class="tech-bg js">JavaScript</span>
-          </div>
-          <p>Fully responsive website developed for a fake company that sells and insures bicycles.</p>
-        </div>
-      </li>
-
-      <li class="projects-card">
-        <div class="img-box">
           <img src="./assets/projects-img/dogs.jpeg" alt="Screenshot of the Dogs project">
         </div>
         <div class="project-description">
@@ -126,6 +105,27 @@
             <span class="tech-bg css">CSS Modules</span>
           </div>
           <p>Social media application developed with React JS, using an API.</p>
+        </div>
+      </li>
+
+      <li class="projects-card">
+        <div class="img-box">
+          <img src="./assets/projects-img/bikcraft.jpeg" alt="Screenshot of the bikcraft project">
+        </div>
+        <div class="project-description">
+          <div class="card-title">
+            <h3>Bikcraft</h3>
+            <div class="card-icons">
+              <a href="https://github.com/diegovianaf/orig-bikcraft" target="_blank"><span class="github-icon"></span></a>
+              <a href="https://diegovianaf.github.io/orig-bikcraft/" target="_blank"><span class="link-icon"></span></a>
+            </div>
+          </div>
+          <div class="card-techs">
+            <span class="tech-bg html">HTML</span>
+            <span class="tech-bg css">CSS</span>
+            <span class="tech-bg js">JavaScript</span>
+          </div>
+          <p>Fully responsive website developed for a fake company that sells and insures bicycles.</p>
         </div>
       </li>
 
@@ -216,32 +216,37 @@
     </ul>
   </section>
 
-  <section class="contact" id="contact">
+  <section class="contact container" id="contact">
     <h2 class="title">Contact Me</h2>
-    <div class="contact-container">
-      <div class="contact-data">
-        <h3>Get in Touch</h3>
-        <p>If you want to connect with me for a call or just a brief chat, you can find me on LinkedIn or you can send me a message in the form on the side!</p>
-        <div class="contact-location">
-          <p>Rio de Janeiro, Brazil</p>
+    <div class="contact-content">
+      <div>
+        <div class="contact-info">
+          <h3>Get in Touch<span>.</span></h3>
+          <p>Hello again, and thanks for scrolling this far! I'm currently looking for an opportunity as a Frontend Developer...</p>
+          <p>If you have any questions or only want to say hi, feel free to connect with me on LinkedIn or send me a message here!</p>
         </div>
-        <address class="contact-email">
-          <a href="mailto:diegoviana7@gmail.com">diegovianaf7@gmail.com</a>
-        </address>
+
         <div class="contact-social">
-          <a href="https://www.linkedin.com/in/diegovianaf/" target="_blank">
-            <img src="./assets/icons/linkedin-in-brands.svg" width="32" height="32" alt="LinkedIn">
+          <a class="contact-link" href="https://github.com/diegovianaf" target="_blank">
+            <img src="./assets/icons/github-color.svg" alt="" width="20">
+            GitHub
           </a>
-          <a href="https://github.com/diegovianaf" target="_blank">
-            <img src="./assets/icons/github-brands.svg" width="32" height="32" alt="GitHub">
+          <a class="contact-link" href="https://www.linkedin.com/in/diegovianaf/" target="_blank">
+            <img src="./assets/icons/linkedin-color.svg" alt="" width="18">
+            LinkedIn
+          </a>
+          <a class="contact-link" href="mailto:diegovianaf7@gmail.com" target="_blank">
+            <img src="./assets/icons/envelope-color.svg" alt="" width="20">
+            Email
           </a>
         </div>
       </div>
-      <form target="_blank" action="https://formsubmit.co/diegovianaf7@gmail.com" method="POST" class="contact-form">
+      
+      <form class="contact-form" target="_blank" action="https://formsubmit.co/diegovianaf7@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New Email!">
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="Email" required>
-        <textarea rows="5" name="message" placeholder="Message" required></textarea>
+        <textarea rows="6" name="message" placeholder="Message" required></textarea>
         <!-- Create a Thanks page, and the directory in the input below -->
         <!-- <input type="hidden" name="_next" value=""> -->
         <input type="hidden" name="_captcha" value="false">
