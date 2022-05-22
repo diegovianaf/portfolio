@@ -10,14 +10,17 @@
       flex: 1 1 280px;
       border: 2px solid $color-4;
       border-radius: 8px;
+      transition: transform 400ms linear;
+
+      p {
+      transition: color 400ms linear;
+      }
 
       &:hover {
         transform: scale(1.02);
-        transition: all 200ms linear;
 
         p {
           color: $color-1;
-          transition: 300ms ;
         }
       }
       
