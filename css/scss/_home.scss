@@ -1,14 +1,14 @@
 .home-bg {
-  display: flex;
   align-items: center;
+  display: flex;
 
   .home {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 32px;
+    height: calc(100vh - 76px);
     justify-content: center;
-    height: calc(100vh - 83px);
 
     .home-title {
       font-weight: 600;

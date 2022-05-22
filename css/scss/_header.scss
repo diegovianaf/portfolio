@@ -4,9 +4,10 @@
   .header {
     align-items: center;
     display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
     justify-content: space-between;
-    padding-bottom: 12px;
-    padding-top: 12px;
+    padding: 8px 20px;
 
     .logo {
       color: $color-1;
