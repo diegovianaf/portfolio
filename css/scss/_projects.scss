@@ -1,9 +1,9 @@
 .projects {
-  max-width: 960px;
+  max-width: 1200px;
 
   .projects-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
 
     .projects-card {
