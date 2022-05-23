@@ -523,8 +523,19 @@ img {
 }
 
 .footer {
-  margin-top: 20px;
+  margin-top: 60px;
   padding: 40px 20px;
   text-align: center;
+  background-color: #000000;
+  color: #b9c1c6;
+}
+
+.footer a {
+  color: #e29b00;
+}
+
+.footer a:hover {
+  color: #fcb211;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,16 @@
 .footer {
-  margin-top: 20px;
+  margin-top: 60px;
   padding: 40px 20px;
   text-align: center;
+  background-color: $color-6;
+  color: $color-2;
+
+  a {
+    color: $primary-color-2;
+
+    &:hover {
+      color: $primary-color-1;
+      text-decoration: underline;
+    }
+  }
 }
