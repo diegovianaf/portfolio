@@ -1,0 +1,19 @@
+$small-device: 480px;
+$medium-device: 768px;
+$large-device: 992px;
+
+@mixin device($size) {
+  @if $size == large {
+    @media (max-width: #{$large-device}) {
+      @content;
+    }
+  } @else if $size == medium {
+    @media (max-width: #{$medium-device}) {
+      @content;
+    }
+  } @else if $size == small {
+    @media (max-width: #{$small-device}) {
+      @content;
+    }
+  }
+}
