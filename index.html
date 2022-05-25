@@ -15,18 +15,19 @@
 </head>
 
 <body>
-  <header class="header-bg">
-    <div class="header">
-      <a href="#" class="logo"><span>{</span>D<span>}</span></a>
-      <nav aria-label="primary">
-        <ul class="header-navbar">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="header" id="header">
+    <nav class="navbar" aria-label="primary">
+      <a href="#" class="nav-logo"><span>{</span>D<span>}</span></a>
+      <ul class="nav-menu" role="menu">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <button aria-label="Open Menu" class="mobile-btn" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </nav>
   </header>
 
   <main class="home-bg">
@@ -52,7 +53,7 @@
   <article class="about container" id="about">
     <h2 class="title">About Me</h2>
     <div class="about-content">
-        <aside class="about-bio">
+        <div class="about-bio">
           <p>
             Hey, thanks for coming here! My name is Diego, and I'm a self-taught developer who likes social, cultural, and collaborative experiences.
           <p>
@@ -65,18 +66,18 @@
           <p>
             Currently, I'm developing small projects using the following technologies and tools:
           </p>
-          <ul class="skills-list">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Sass</li>
-            <li>ESLint</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>npm</li>
-          </ul>
-        </aside>
+        </div>
+        <ul class="skills-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Sass</li>
+          <li>ESLint</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>npm</li>
+        </ul>
         <div class="about-img">
           <img src="./assets/profile-pic.jpg" width="455" height="569" alt="A photo of me, smiling, during a walk in the snow">
           <div class="img-border"></div>
@@ -259,6 +260,8 @@
   <footer class="footer">
     <p>Designed and Developed by <a href="https://www.linkedin.com/in/diegovianaf/" target="_blank">Diego Viana</a>.</p>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
