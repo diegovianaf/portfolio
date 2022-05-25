@@ -1,15 +1,25 @@
-.header-bg {
+.header {
+  background-color: $color-5;
   border-bottom: 1px solid $color-4;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 
-  .header {
+  .navbar {
     align-items: center;
     display: flex;
+    height: 60px;
     margin: 0 auto;
     max-width: 1200px;
     justify-content: space-between;
-    padding: 8px 20px;
+    padding: 20px;
 
-    .logo {
+    @include phone {
+      padding: 12px;
+    }
+
+    .nav-logo {
       color: $color-1;
       font-family: 'Poppins', sans-serif;
       font-size: 2rem;
@@ -25,23 +35,44 @@
 
         span {
           color: $primary-color-1;
-          transition: 400ms;
+          transition: .4s;
         }
       }
     }
 
-    .header-navbar {
+    .nav-menu {
+      align-items: center;
       display: flex;
-      flex-wrap: wrap;
       font-family: 'Poppins', sans-serif;
       gap: 40px;
 
-      a {
+      @include phone {
+        background-color: $color-5;
+        bottom: 0;
+        display: block;
+        height: 0;
+        left: 0;
+        overflow-y: hidden;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 60px;
+        transition: .6s;
+        width: 100%;
+        visibility: hidden;
+        z-index: 999;
+      }
+
+      .nav-link {
         color: $color-1;
         display: inline-block;
         font-size: 1.125rem;
         padding: 16px 0;
         position: relative;
+
+        @include phone {
+          margin: 0 20px;
+        }
 
         &:hover {
           color: $color-2;
@@ -54,12 +85,63 @@
           display: block;
           height: 4px;
           position: absolute;
-          transition: 400ms;
+          transition: .4s;
           width: 0;
         }
 
         &:hover::after {
           width: 100%;
+        }
+      }
+    }
+
+    .mobile-btn {
+      display: none;
+      
+      @include phone {
+        background: none;
+        border: none;
+        color: $color-1;
+        cursor: pointer;
+        display: flex;
+        padding: 8px 4px;
+
+        .hamburger {
+          border-top: 3px solid;
+          display: block;
+          width: 28px;
+
+          &::after,
+          &::before {
+            background: currentColor;
+            content: '';
+            display: block;
+            height: 3px;
+            margin-top: 6px;
+            position: relative;
+            transition: .3s;
+            width: inherit;
+          }
+        }
+      }
+    }
+
+    &.active {
+      .nav-menu {
+        height: calc(100vh - 64px);
+        visibility: visible;
+      }
+
+      .hamburger {
+        border-top-color: transparent;
+
+        &::after {
+          transform: rotate(-135deg);
+          top: -9px;
+        }
+
+        &::before {
+          transform: rotate(135deg);
         }
       }
     }
