@@ -76,6 +76,10 @@
 
         &:hover {
           color: $color-2;
+
+          @include phone {
+            color: $color-1
+          }
         }
 
         &::after {
@@ -91,6 +95,10 @@
 
         &:hover::after {
           width: 100%;
+
+          @include phone {
+            width: 0;
+          }
         }
       }
     }

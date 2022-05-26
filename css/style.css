@@ -277,6 +277,12 @@ img {
   color: #b9c1c6;
 }
 
+@media (max-width: 568px) {
+  .header .navbar .nav-menu .nav-link:hover {
+    color: #ffffff;
+  }
+}
+
 .header .navbar .nav-menu .nav-link::after {
   background-color: #fcb211;
   border-radius: 4px;
@@ -291,6 +297,12 @@ img {
 
 .header .navbar .nav-menu .nav-link:hover::after {
   width: 100%;
+}
+
+@media (max-width: 568px) {
+  .header .navbar .nav-menu .nav-link:hover::after {
+    width: 0;
+  }
 }
 
 .header .navbar .mobile-btn {
