@@ -111,6 +111,10 @@
   }
 }
 
+.fixed-position {
+  position: fixed;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -250,7 +254,7 @@ img {
     position: absolute;
     right: 0;
     text-align: right;
-    top: 60px;
+    top: 61px;
     -webkit-transition: .6s;
     transition: .6s;
     width: 100%;
@@ -327,7 +331,7 @@ img {
 }
 
 .header .navbar.active .nav-menu {
-  height: calc(100vh - 64px);
+  height: 100vh;
   visibility: visible;
 }
 

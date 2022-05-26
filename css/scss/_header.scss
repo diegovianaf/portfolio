@@ -56,7 +56,7 @@
         position: absolute;
         right: 0;
         text-align: right;
-        top: 60px;
+        top: 61px;
         transition: .6s;
         width: 100%;
         visibility: hidden;
@@ -128,7 +128,7 @@
 
     &.active {
       .nav-menu {
-        height: calc(100vh - 64px);
+        height: 100vh;
         visibility: visible;
       }
 
