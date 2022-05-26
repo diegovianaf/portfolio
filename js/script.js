@@ -13,10 +13,10 @@ function toggleMenu(event) {
 
   if (active) {
     event.currentTarget.setAttribute('aria-label', 'Close Menu')
-    body.classList.add('fixed-position')
+    body.classList.add('scrollbar-position')
   } else {
     event.currentTarget.setAttribute('aria-label', 'Open Menu')
-    body.classList.remove('fixed-position')
+    body.classList.remove('scrollbar-position')
   }
 }
 
@@ -25,7 +25,7 @@ mobileButton.addEventListener('touchstart', toggleMenu)
 
 function closeMenu() {
   navMenu.classList.remove('active')
-  body.classList.remove('fixed-position')
+  body.classList.remove('scrollbar-position')
 }
 
 navLinks.forEach((navLink) => navLink.addEventListener('click', closeMenu))

@@ -81,6 +81,7 @@
   }
 }
 
-.fixed-position {
-  position: fixed;
+.scrollbar-position {
+  overflow-y: hidden;
+  position: relative;
 }
