@@ -12,7 +12,7 @@
 
     @include phone {
       height: auto;
-      margin-top: 20px;
+      margin-top: 80px;
     }
 
     .home-title {
@@ -67,7 +67,8 @@
         }
 
         @include sm-phone {
-          font-size: 1rem;
+          font-size: 1.125rem;
+          font-weight: 400;
         }
       }
     }

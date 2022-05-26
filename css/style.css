@@ -1,12 +1,6 @@
 .container {
-  margin: 60px auto;
-  padding: 80px 20px 60px;
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding-bottom: 0;
-  }
+  margin: 0 auto;
+  padding: 80px 20px 0;
 }
 
 @media (max-width: 568px) {
@@ -380,7 +374,7 @@ img {
 @media (max-width: 568px) {
   .home .home-content {
     height: auto;
-    margin-top: 20px;
+    margin-top: 80px;
   }
 }
 
@@ -453,7 +447,8 @@ img {
 
 @media (max-width: 460px) {
   .home .home-content .home-title p {
-    font-size: 1rem;
+    font-size: 1.125rem;
+    font-weight: 400;
   }
 }
 
