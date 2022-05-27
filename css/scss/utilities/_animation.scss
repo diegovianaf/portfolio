@@ -1,0 +1,30 @@
+.js {
+  .fadeInDown {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  .fadeInUp {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  .fadeInRight {
+    opacity: 0;
+    transform: translate3d(20px, 0, 0);
+  }
+
+  .fadeInLeft {
+    opacity: 0;
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  .fadeInDown.animate,
+  .fadeInUp.animate,
+  .fadeInRight.animate,
+  .fadeInLeft.animate {
+    opacity: 1;
+    transform: none;
+    transition: transform 0.8s, opacity 0.8s;
+  }
+}
