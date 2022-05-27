@@ -1,7 +1,7 @@
 const mobileButton = document.querySelector('.mobile-btn')
 const navMenu = document.querySelector('.navbar')
 const body = document.querySelector('body')
-const navLinks = document.querySelectorAll('.nav-link')
+const navLinks = document.querySelectorAll('[href^="#"]')
 
 function toggleMenu(event) {
   if (event.type === 'touchstart') event.preventDefault()
