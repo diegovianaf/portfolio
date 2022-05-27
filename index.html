@@ -7,8 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Diego Viana, a Frontend Developer from Brazil.">
   <title>Diego Viana | Frontend Developer</title>
-  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./css/style.css">
+  
+  <script>document.documentElement.classList.add('js')</script>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
@@ -17,12 +21,12 @@
 <body>
   <header class="header" id="header">
     <nav class="navbar" aria-label="primary">
-      <a href="#" class="nav-logo"><span>{</span>D<span>}</span></a>
-      <ul class="nav-menu" role="menu">
-        <li><a class="nav-link" href="#">Home</a></li>
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
+      <a href="#" class="nav-logo fadeInLeft"><span>{</span>D<span>}</span></a>
+      <ul class="nav-menu fadeInRight" role="menu">
+        <li><a class="nav-link fadeInDown" href="#">Home</a></li>
+        <li><a class="nav-link fadeInDown" href="#about">About</a></li>
+        <li><a class="nav-link fadeInDown" href="#projects">Projects</a></li>
+        <li><a class="nav-link fadeInDown" href="#contact">Contact</a></li>
       </ul>
       <button aria-label="Open Menu" class="mobile-btn" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
         <span class="hamburger"></span>
@@ -33,11 +37,11 @@
   <main class="home">
     <div class="home-content container">
       <div class="home-title">
-        <p>Hey there, I'm</p>
-        <h1>Diego Viana<span>.</span></h1>
-        <p>Frontend Developer</p>
+        <p class="fadeInLeft">Hey there, I'm</p>
+        <h1 class="fadeInRight">Diego Viana<span>.</span></h1>
+        <p class="fadeInLeft">Frontend Developer</p>
       </div>
-      <div class="social-links">
+      <div class="social-links fadeInDown">
         <a class="contact-link" href="https://github.com/diegovianaf" target="_blank">
           <img src="./assets/icons/github-color.svg" alt="" width="20" height="20">
           GitHub
@@ -50,14 +54,14 @@
     </div>
   </main>
 
-  <article class="about container" id="about">
-    <h2 class="title">About Me</h2>
+  <article class="about container"id="about">
+    <h2 class="title fadeInUp">About Me</h2>
     <div class="about-content">
-      <div class="about-img">
+      <div class="about-img fadeInLeft">
         <img src="./assets/profile-pic.jpg" width="455" height="569" alt="A photo of me, smiling, during a walk in the snow">
         <div class="img-border"></div>
       </div>
-      <div class="about-bio">
+      <div class="about-bio fadeInRight">
         <p>
           Hey, thanks for coming here! My name is Diego, and I'm a self-taught developer who likes social, cultural, and collaborative experiences.
         </p>
@@ -75,10 +79,10 @@
   </article>
 
   <section class="projects container" id="projects">
-    <h2 class="title">Projects</h2>
+    <h2 class="title fadeInUp">Projects</h2>
     <ul class="projects-list">
 
-      <li class="projects-card">
+      <li class="projects-card fadeInUp">
         <div class="img-box">
           <img src="./assets/projects-img/dogs.jpg" width="746" height="420" alt="Screenshot of the Dogs project">
         </div>
@@ -99,7 +103,7 @@
         </div>
       </li>
 
-      <li class="projects-card">
+      <li class="projects-card fadeInUp">
         <div class="img-box">
           <img src="./assets/projects-img/bikcraft.jpg" width="861" height="484" alt="Screenshot of the bikcraft project">
         </div>
@@ -120,7 +124,7 @@
         </div>
       </li>
 
-      <li class="projects-card">
+      <li class="projects-card fadeInUp">
         <div class="img-box">
           <img src="./assets/projects-img/todo-list.jpg" width="746" height="420" alt="Screenshot of the To-do List project">
         </div>
@@ -141,7 +145,7 @@
         </div>
       </li>
 
-      <li class="projects-card">
+      <li class="projects-card fadeInUp">
         <div class="img-box">
           <img src="./assets/projects-img/animals.jpg" width="772" height="434" alt="Screenshot of the Fantastic Animals project">
         </div>
@@ -162,7 +166,7 @@
         </div>
       </li>
 
-      <li class="projects-card">
+      <li class="projects-card fadeInUp">
         <div class="img-box">
           <img src="./assets/projects-img/bmi-calculator.jpg" width="747" height="420" alt="Screenshot of the BMI Calculator project">
         </div>
@@ -183,7 +187,7 @@
         </div>
       </li>
 
-      <li class="projects-card">
+      <li class="projects-card fadeInUp">
         <div class="img-box">
           <img src="./assets/projects-img/counter.jpg" width="747" height="420" alt="Screenshot of the Counter project">
         </div>
@@ -208,9 +212,9 @@
   </section>
 
   <section class="contact container" id="contact">
-    <h2 class="title">Contact Me</h2>
+    <h2 class="title fadeInUp">Contact Me</h2>
     <div class="contact-content">
-      <div>
+      <div class="fadeInLeft">
         <div class="contact-info">
           <h3>Get in Touch<span>.</span></h3>
           <p>Hello again, and thanks for scrolling this far! I'm currently looking for an opportunity as a Frontend Developer...</p>
@@ -233,7 +237,7 @@
         </div>
       </div>
       
-      <form class="contact-form" target="_blank" action="https://formsubmit.co/diegovianaf7@gmail.com" method="POST">
+      <form class="contact-form fadeInRight" target="_blank" action="https://formsubmit.co/diegovianaf7@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New Email!">
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="Email" required>
