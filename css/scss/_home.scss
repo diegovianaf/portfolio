@@ -11,9 +11,9 @@
     justify-content: center;
 
     @include phone {
-    height: calc(100vh - 160px);
-    padding-left: 6px;
-    padding-right: 6px;
+      height: calc(100vh - 160px);
+      padding-left: 6px;
+      padding-right: 6px;
     }
 
     .home-title {
