@@ -14,10 +14,6 @@
       img {
         border-radius: 8px;
         max-width: 260px;
-
-        @include sm-phone {
-          max-width: 220px;
-        }
       }
     }
 

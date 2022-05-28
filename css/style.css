@@ -563,12 +563,6 @@ img {
   max-width: 260px;
 }
 
-@media (max-width: 460px) {
-  .about .about-content .about-img img {
-    max-width: 220px;
-  }
-}
-
 .about .about-content .about-bio {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 360px;
