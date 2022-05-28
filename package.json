@@ -1,17 +1,19 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "A personal website to show my projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development --watch ./js/script.js",
+    "build": "webpack --mode production ./js/script.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/diegovianaf/diegovianaf.github.io.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Diego Viana <diegovianaf7@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/diegovianaf/diegovianaf.github.io/issues"
   },
@@ -19,6 +21,8 @@
   "devDependencies": {
     "eslint": "^8.16.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0"
+    "eslint-plugin-import": "^2.26.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
   }
 }
