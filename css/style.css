@@ -99,7 +99,6 @@
   cursor: pointer;
   display: inline-block;
   font: 600 1rem "Poppins", sans-serif;
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   padding: 12px 24px;
@@ -560,7 +559,8 @@ img {
   color: #FEB2B2;
 }
 .projects .projects-list .projects-card .project-description .card-techs .css,
-.projects .projects-list .projects-card .project-description .card-techs .react {
+.projects .projects-list .projects-card .project-description .card-techs .react,
+.projects .projects-list .projects-card .project-description .card-techs .typescript {
   background-color: rgba(144, 205, 244, 0.16);
   color: #90cdf4;
 }
@@ -568,7 +568,9 @@ img {
   background-color: rgba(219, 112, 147, 0.161);
   color: #db7093;
 }
-.projects .projects-list .projects-card .project-description .card-techs .axios {
+.projects .projects-list .projects-card .project-description .card-techs .axios,
+.projects .projects-list .projects-card .project-description .card-techs .bootstrap,
+.projects .projects-list .projects-card .project-description .card-techs .vite {
   background-color: rgba(90, 41, 228, 0.161);
   color: #5a29e4;
 }
