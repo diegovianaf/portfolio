@@ -34,7 +34,7 @@ With this project, I learned a lot about solving problems because there was alwa
 - [FormSubmit](https://formsubmit.co/)
 ## Demo
 
-https://diegovianaf.github.io/
+https://diegovianaf.github.io/portfolio/
 
 #### Home Page Layout (mobile)
 
